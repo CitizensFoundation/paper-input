@@ -61,7 +61,7 @@ style this element.
         id$="[[_inputId]]"
         aria-labelledby$="[[_ariaLabelledBy]]"
         aria-describedby$="[[_ariaDescribedBy]]"
-        aria-label$="[[forceLabel]]"
+        label="[[label]]"
         bind-value="{{value}}"
         invalid="{{invalid}}"
         validator$="[[validator]]"
@@ -110,11 +110,6 @@ style this element.
       _ariaDescribedBy: {
         observer: '_ariaDescribedByChanged',
         type: String,
-      },
-
-      forceAriaLabel: {
-        type: String,
-        value: null
       },
 
       value: {
